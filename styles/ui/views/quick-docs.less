@@ -1,0 +1,44 @@
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+title      Quick Docs                                       +
+project    nord-brackets                                    +
+repository https://github.com/arcticicestudio/nord-brackets +
+author     Arctic Ice Studio                                +
+email      development@arcticicestudio.com                  +
+copyright  Copyright (C) 2017                               +
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+.CodeMirror-linewidget .inline-widget {
+  background-color: @ui-view-quick-docs-background-color;
+
+  .close {
+    color: @editor-text-color-subtle;
+    transition: all @editor-transition-time ease;
+
+    &:hover {
+      color: @editor-text-color;
+    }
+  }
+
+  .css-prop-summary,
+  .css-prop-values {
+    color: @editor-text-color;
+
+    dt,
+    h1 {
+      color: @editor-text-color;
+    }
+
+    a {
+      color: @ui-view-quick-docs-link-color;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .divider {
+    border-left: 1px solid @ui-border-color;
+  }
+}
