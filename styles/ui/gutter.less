@@ -1,0 +1,41 @@
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+title      Gutter                                           +
+project    nord-brackets                                    +
+repository https://github.com/arcticicestudio/nord-brackets +
+author     Arctic Ice Studio                                +
+email      development@arcticicestudio.com                  +
+copyright  Copyright (C) 2017                               +
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+.CodeMirror-gutters {
+  background-color: @editor-gutter-background-color;
+  border-right: none;
+}
+
+.CodeMirror-linenumber {
+  color: @editor-gutter-text-color;
+}
+
+.CodeMirror-foldgutter-open:after {
+  color: @editor-gutter-icon-open-color;
+}
+
+.CodeMirror-foldgutter-folded:after {
+  color: @editor-gutter-icon-folded-color;
+}
+
+.CodeMirror.over-gutter,
+.CodeMirror-activeline {
+  .CodeMirror-foldgutter-open:after {
+    transition: color @editor-transition-time ease;
+    color: @editor-gutter-icon-open-hover-color;
+  }
+}
+
+.CodeMirror-foldmarker {
+  background-color: @editor-foldmarker-background-color;
+  border-color: @editor-foldmarker-border-color;
+  border-radius: @editor-border-radius;
+  color: @editor-text-color;
+}

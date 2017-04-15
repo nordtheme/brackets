@@ -1,0 +1,109 @@
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+title      Syntax Variables                                 +
+project    nord-brackets                                    +
+repository https://github.com/arcticicestudio/nord-brackets +
+author     Arctic Ice Studio                                +
+email      development@arcticicestudio.com                  +
+copyright  Copyright (C) 2017                               +
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/*+---------+
+  + Imports +
+  +---------+*/
+@import "nord";
+
+/*+------------+
+  + Animations +
+  +------------+*/
+@editor-transition-time: 400ms;
+
+/*+------+
+  + Base +
+  +------+*/
+@editor-background-color: @nord0;
+@editor-active-line: fade(@nord2, 32%);
+@editor-selection-color: fade(@nord2, 80%);
+@editor-selection-unfocused-color: fade(@nord2, 30%);
+@editor-text-color: @nord4;
+@editor-text-color-subtle: fade(@editor-text-color, 40%);
+
+/*+-----------------+
+  + Editor Elements +
+  +-----------------+*/
+@editor-cursor-color: @editor-text-color;
+@editor-invisible-character-color: @nord3;
+
+/*+-----+
+  + Git +
+  +-----+*/
+@editor-syntax-color-added: @nord14;
+@editor-syntax-color-removed: @nord11;
+
+/*+--------+
+  + Gutter +
+  +--------+*/
+@editor-gutter-background-color: @editor-background-color;
+@editor-gutter-background-color-selected: transparent;
+@editor-gutter-icon-folded-color: @nord8;
+@editor-gutter-icon-open-color: @nord2;
+@editor-gutter-icon-open-hover-color: @nord3;
+@editor-gutter-text-color: fade(@editor-text-color, 40%);
+@editor-gutter-text-color-selected: @nord6;
+
+/*+------------+
+  + Foldmarker +
+  +------------+*/
+@editor-foldmarker-background-color: @editor-selection-color;
+@editor-foldmarker-border-color: transparent;
+
+/*+-------------------+
+  + Language Entities +
+  +-------------------+*/
+/*+--- Base ---+*/
+@editor-syntax-color-annotation: @nord12;
+@editor-syntax-color-attribute: @nord7;
+@editor-syntax-color-class: @nord7;
+@editor-syntax-color-comment: @nord3;
+@editor-syntax-color-function: @nord8;
+@editor-syntax-color-keyword: @nord9;
+@editor-syntax-color-method: @nord8;
+@editor-syntax-color-numeric: @nord15;
+@editor-syntax-color-operator: @nord9;
+@editor-syntax-color-property: @nord9;
+@editor-syntax-color-punctuation: @nord4;
+@editor-syntax-color-regex: @nord13;
+@editor-syntax-color-string: @nord14;
+@editor-syntax-color-tag: @nord9;
+@editor-syntax-color-variable: @nord4;
+@editor-syntax-color-illegal: @nord11;
+
+/*+--- Specific ---+*/
+@editor-syntax-color-markup-heading: @nord8;
+@editor-syntax-color-markup-hr: @nord9;
+@editor-syntax-color-markup-link: @nord8;
+
+/*+--------+
+  + Marker +
+  +--------+*/
+@editor-matcher-color: @nord8;
+@editor-search-match-background-color: fade(@nord8, 40%);
+@editor-search-match-current-border-color: @editor-matcher-color;
+
+/*+-------+
+  + Sizes +
+  +-------+*/
+@editor-border-radius: 4px;
+
+/*+----+
+  + UI +
+  +----*/
+@ui-border-color: @nord1;
+
+/*+--- Pane ---+*/
+@ui-pane-background-color: @nord1;
+
+/*+--- View ---+*/
+@ui-view-quick-docs-background-color: @nord2;
+@ui-view-quick-docs-link-color: @nord8;
+@ui-view-quick-view-background-color: @nord2;

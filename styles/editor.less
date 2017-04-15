@@ -1,0 +1,91 @@
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+title      Editor                                           +
+project    nord-brackets                                    +
+repository https://github.com/arcticicestudio/nord-brackets +
+author     Arctic Ice Studio                                +
+email      development@arcticicestudio.com                  +
+copyright  Copyright (C) 2017                               +
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+.CodeMirror,
+.CodeMirror-scroll {
+  background-color: @editor-background-color;
+  color: @editor-text-color;
+}
+
+/*+------------+
+  + Components +
+  +------------+*/
+/*+--- Cursor ---+*/
+.CodeMirror-cursor {
+  border-left: 2px solid @editor-cursor-color;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+  border-left: none !important;
+  border-bottom: 2px solid @editor-cursor-color;
+}
+
+/*+------------+
+  + UX Support +
+  +------------+*/
+/*+--- Active Line ---+*/
+.CodeMirror-focused .CodeMirror-activeline-background {
+  background-color: @editor-active-line;
+}
+
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+  box-shadow: none;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+  .CodeMirror-gutter-elt {
+    background-color: @editor-gutter-background-color-selected;
+    color: @editor-gutter-text-color-selected;
+  }
+
+  .inline-widget .CodeMirror-gutter-elt {
+    color: @editor-gutter-text-color-selected;
+  }
+}
+
+/*+--- Selected Line ---+*/
+.CodeMirror .CodeMirror-selected {
+  background-color: @editor-selection-unfocused-color;
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+  background-color: @editor-selection-color;
+}
+
+/*+--- Brackets ---+*/
+.CodeMirror-matchingbracket,
+.CodeMirror-matchingtag {
+  background-color: transparent !important;
+  border-bottom: 2px solid @editor-matcher-color;
+  color: inherit !important;
+}
+
+/*+--- Search Highlights ---+*/
+.CodeMirror-searching {
+  background-color: @editor-search-match-background-color;
+  color: inherit !important;
+
+  &.searching-current-match {
+    border-bottom: 2px solid @editor-search-match-current-border-color;
+    border-top: 2px solid @editor-search-match-current-border-color;
+
+    &.searching-first {
+      border-left: 2px solid @editor-search-match-current-border-color;
+      border-bottom-left-radius: @editor-border-radius;
+      border-top-left-radius: @editor-border-radius;
+    }
+
+    &.searching-last {
+      border-right: 2px solid @editor-search-match-current-border-color;
+      border-bottom-right-radius: @editor-border-radius;
+      border-top-right-radius: @editor-border-radius;
+    }
+  }
+}
