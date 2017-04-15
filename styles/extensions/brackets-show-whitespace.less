@@ -1,0 +1,29 @@
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+title      Extension Support: brackets-show-whitespace      +
+project    nord-brackets                                    +
+repository https://github.com/arcticicestudio/nord-brackets +
+author     Arctic Ice Studio                                +
+email      development@arcticicestudio.com                  +
+copyright  Copyright (C) 2017                               +
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+[Extension]
+  > brackets-show-whitespace (https://github.com/DennisKehrig/brackets-show-whitespace)
+*/
+.CodeMirror {
+  .cm-dk-whitespace-space:before,
+  .cm-dk-whitespace-nonbrk-space:before,
+  .cm-dk-whitespace-leading-space:before,
+  .cm-dk-whitespace-leading-nonbrk-space:before,
+  .cm-dk-whitespace-trailing-space:before,
+  .cm-dk-whitespace-trailing-nonbrk-space:before,
+  .cm-dk-whitespace-empty-line-space:before,
+  .cm-dk-whitespace-empty-line-nonbrk-space:before,
+  .cm-dk-whitespace-tab:before,
+  .cm-dk-whitespace-leading-tab:before,
+  .cm-dk-whitespace-trailing-tab:before,
+  .cm-dk-whitespace-empty-line-tab:before {
+    background-color: @editor-invisible-character-color;
+  }
+}
