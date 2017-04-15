@@ -64,7 +64,7 @@ Detailed descriptions for supported extensions can be found in the [project wiki
 <p align="center"><a href="https://github.com/DennisKehrig/brackets-show-whitespace"><code>brackets-show-whitespace</code></a><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-brackets/develop/assets/scrot-extension-support-brackets-show-whitespace.png"</p>
 
 ## Development
-[![](https://img.shields.io/badge/Changelog-0.1.1-81A1C1.svg)](https://github.com/arcticicestudio/nord-brackets/blob/v0.1.1/CHANGELOG.md) [![](https://img.shields.io/badge/Workflow-gitflow--branching--model-81A1C1.svg)](http://nvie.com/posts/a-successful-git-branching-model) [![](https://img.shields.io/badge/Versioning-ArcVer_0.8.0-81A1C1.svg)](https://github.com/arcticicestudio/arcver)
+[![](https://img.shields.io/badge/Changelog-0.1.0-81A1C1.svg)](https://github.com/arcticicestudio/nord-brackets/blob/v0.1.0/CHANGELOG.md) [![](https://img.shields.io/badge/Workflow-gitflow--branching--model-81A1C1.svg)](http://nvie.com/posts/a-successful-git-branching-model) [![](https://img.shields.io/badge/Versioning-ArcVer_0.8.0-81A1C1.svg)](https://github.com/arcticicestudio/arcver)
 
 Continuous integration builds are running at [Travis CI](https://travis-ci.org/arcticicestudio/nord-brackets) and [Circle CI](https://circleci.com/gh/arcticicestudio/nord-brackets).
 
