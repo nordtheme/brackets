@@ -13,19 +13,19 @@ Based on the <a href="https://github.com/arcticicestudio/nord">Nord</a> color pa
 
 ## Getting started
 ### Installation
-#### <img src="https://brackets-registry.aboutweb.com/img/brackets-24.svg" width=16 height=16/> <a href="https://brackets-registry.aboutweb.com">Brackets Extension Registry</a>
+#### <img src="http://brackets.io/favicon.ico" width=16 height=16/> <a href="https://brackets-registry.aboutweb.com">Brackets Extension Registry</a>
   1. Open your *Extension Manager* by clicking on the building block icon in the toolbar or via *File* > *Extension Manager*
   2. Select the *Themes* tab
   3. Search for `Nord` and click on <kbd>Install</kbd>
 
 More information can be found in the [Brackets Wiki](https://github.com/adobe/brackets/wiki/Brackets-Extensions).
 
-#### <img src="https://brackets-registry.aboutweb.com/img/brackets-24.svg" width=16 height=16/> From ZIP file
+#### <img src="http://brackets.io/favicon.ico" width=16 height=16/> From ZIP file
 [Download](https://github.com/arcticicestudio/nord-brackets/releases/latest) the latest [`nord-brackets-0.1.0.zip`](https://github.com/arcticicestudio/nord-brackets/releases/download/0.1.1/nord-brackets-0.1.0.zip) file from the GitHub repository and install it:
   1. Open your *Extension Manager* by clicking on the building block icon in the toolbar or via *File* > *Extension Manager*
   2. Drag and drop it in the field at the buttom of the *Extension Manager* **or** click on the *Install from URL* link and enter the full path to the downloaded `.zip` file
 
-#### <img src="https://brackets-registry.aboutweb.com/img/brackets-24.svg" width=16 height=16/> From URL
+#### <img src="http://brackets.io/favicon.ico" width=16 height=16/> From URL
   1. Open your *Extension Manager* by clicking on the building block icon in the toolbar or via *File* > *Extension Manager*
   2. Click on the *Install from URL* link in the field at the buttom and enter the Nord Brackets GitHub repository URL `https://github.com/arcticicestudio/nord-brackets`
 
