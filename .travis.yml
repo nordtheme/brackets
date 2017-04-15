@@ -1,0 +1,29 @@
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# title      Travis CI Build Configuration                    +
+# project    nord-brackets                                    +
+# repository https://github.com/arcticicestudio/nord-brackets +
+# author     Arctic Ice Studio                                +
+# email      development@arcticicestudio.com                  +
+# copyright  Copyright (C) 2017                               +
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#
+# [References]
+# Travis CI
+#   https://docs.travis-ci.com
+language: node_js
+sudo: false
+dist: trusty
+os:
+  - linux
+  - osx
+node_js:
+  - "6"
+  - "7"
+before_install:
+  - rm -rf ./node_modules
+before_script:
+  - npm install -g gulp-cli
+  - npm install gulp
+  - npm install
+script:
+  - gulp --harmony lint

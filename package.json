@@ -1,0 +1,30 @@
+{
+  "name": "nord-brackets",
+  "title": "Nord",
+  "description": "An arctic, north-bluish clean and elegant Brackets theme.",
+  "version": "0.0.0",
+  "homepage": "https://github.com/arcticicestudio/nord-brackets",
+  "author": "Arctic Ice Studio <development@arcticicestudio.com> (http://arcticicestudio.com)",
+  "license": "(Apache-2.0 AND CC-BY-SA-4.0)",
+  "engines": {
+    "brackets": ">=0.24.0"
+  },
+  "theme": {
+    "file": "nord-brackets.less",
+    "dark": true,
+    "addModeClass": true
+  },
+  "keywords": [
+    "arctic",
+    "north",
+    "bluish",
+    "clean",
+    "elegant"
+  ],
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-help": "^1.6.1",
+    "gulp-stylelint": "^3.9.0",
+    "stylelint-config-standard": "^16.0.0"
+  }
+}
