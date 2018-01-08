@@ -1,19 +1,16 @@
 /*
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-title      stylelint Configuration                          +
-project    nord-brackets                                    +
-repository https://github.com/arcticicestudio/nord-brackets +
-author     Arctic Ice Studio                                +
-email      development@arcticicestudio.com                  +
-copyright  Copyright (C) 2017                               +
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ * Copyright (c) 2017-present Arctic Ice Studio <development@arcticicestudio.com>
+ * Copyright (c) 2017-present Sven Greb <code@svengreb.de>
+ *
+ * Project:    Nord Brackets
+ * Repository: https://github.com/arcticicestudio/nord-brackets
+ * License:    MIT
+ * References
+ *   https://stylelint.io
+ *   https://stylelint.io/user-guide/rules
+ *   https://github.com/stylelint/stylelint-config-standard
+ */
 
-[References]
-stylelint
-  https://stylelint.io
-  https://stylelint.io/user-guide/rules
-  https://github.com/stylelint/stylelint-config-standard
-*/
 module.exports = {
   "extends": "stylelint-config-standard",
   "rules": {

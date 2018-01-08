@@ -1,20 +1,17 @@
-"use strict";
 /*
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-title      Project Gulp File                                +
-project    nord-brackets                                    +
-repository https://github.com/arcticicestudio/nord-brackets +
-author     Arctic Ice Studio                                +
-email      development@arcticicestudio.com                  +
-copyright  Copyright (C) 2017                               +
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ * Copyright (c) 2017-present Arctic Ice Studio <development@arcticicestudio.com>
+ * Copyright (c) 2017-present Sven Greb <code@svengreb.de>
+ *
+ * Project:    Nord Brackets
+ * Repository: https://github.com/arcticicestudio/nord-brackets
+ * License:    MIT
+ * References
+ *   http://gulpjs.com
+ *   https://www.npmjs.com
+ */
 
-[References]
-Gulp
-  http://gulpjs.com
-npmjs
-  https://www.npmjs.com
-*/
+"use strict";
+
 /*+---------+
   + Imports +
   +---------+*/
