@@ -1,26 +1,19 @@
 /*
- * Copyright (c) 2017-present Arctic Ice Studio <development@arcticicestudio.com>
- * Copyright (c) 2017-present Sven Greb <code@svengreb.de>
- *
- * Project:    Nord Brackets
- * Repository: https://github.com/arcticicestudio/nord-brackets
- * License:    MIT
+ * Copyright (c) 2016-present Sven Greb <development@svengreb.de>
+ * This source code is licensed under the MIT license found in the license file.
  */
 
-/*+---------+
-  + Imports +
-  +---------+*/
-@import "nord";
-@import "colors";
+@import url("../node_modules/nord/src/lesscss/nord");
+@import url("colors");
 
-/*+------------+
-  + Animations +
-  +------------+*/
+/* +------------+
+   + Animations +
+   +------------+ */
 @editor-transition-time: 400ms;
 
-/*+------+
-  + Base +
-  +------+*/
+/* +------+
+   + Base +
+   +------+ */
 @editor-background-color: @nord0;
 @editor-active-line: fade(@nord2, 32%);
 @editor-selection-color: fade(@nord2, 80%);
@@ -28,21 +21,21 @@
 @editor-text-color: @nord4;
 @editor-text-color-subtle: fade(@editor-text-color, 40%);
 
-/*+-----------------+
-  + Editor Elements +
-  +-----------------+*/
+/* +-----------------+
+   + Editor Elements +
+   +-----------------+ */
 @editor-cursor-color: @editor-text-color;
 @editor-invisible-character-color: @nord3;
 
-/*+-----+
-  + Git +
-  +-----+*/
+/* +-----+
+   + Git +
+   +-----+ */
 @editor-syntax-color-added: @nord14;
 @editor-syntax-color-removed: @nord11;
 
-/*+--------+
-  + Gutter +
-  +--------+*/
+/* +--------+
+   + Gutter +
+   +--------+ */
 @editor-gutter-background-color: @editor-background-color;
 @editor-gutter-background-color-selected: transparent;
 @editor-gutter-icon-folded-color: @nord8;
@@ -51,16 +44,17 @@
 @editor-gutter-text-color: fade(@editor-text-color, 40%);
 @editor-gutter-text-color-selected: @nord6;
 
-/*+------------+
-  + Foldmarker +
-  +------------+*/
+/* +------------+
+   + Foldmarker +
+   +------------+ */
 @editor-foldmarker-background-color: @editor-selection-color;
 @editor-foldmarker-border-color: transparent;
 
-/*+-------------------+
-  + Language Entities +
-  +-------------------+*/
-/*+--- Base ---+*/
+/* +-------------------+
+   + Language Entities +
+   +-------------------+ */
+
+/* +--- Base ---+ */
 @editor-syntax-color-annotation: @nord12;
 @editor-syntax-color-attribute: @nord7;
 @editor-syntax-color-class: @nord7;
@@ -78,32 +72,32 @@
 @editor-syntax-color-variable: @nord4;
 @editor-syntax-color-illegal: @nord11;
 
-/*+--- Specific ---+*/
+/* +--- Specific ---+ */
 @editor-syntax-color-markup-heading: @nord8;
 @editor-syntax-color-markup-hr: @nord9;
 @editor-syntax-color-markup-link: @nord8;
 
-/*+--------+
-  + Marker +
-  +--------+*/
+/* +--------+
+   + Marker +
+   +--------+ */
 @editor-matcher-color: @nord8;
 @editor-search-match-background-color: fade(@nord8, 40%);
 @editor-search-match-current-border-color: @editor-matcher-color;
 
-/*+-------+
-  + Sizes +
-  +-------+*/
+/* +-------+
+   + Sizes +
+   +-------+ */
 @editor-border-radius: 4px;
 
-/*+----+
-  + UI +
-  +----*/
+/* +----+
+   + UI +
+   +----+ */
 @ui-border-color: @nord1;
 
-/*+--- Pane ---+*/
+/* +--- Pane ---+ */
 @ui-pane-background-color: @nord1;
 
-/*+--- View ---+*/
+/* +--- View ---+ */
 @ui-view-quick-docs-background-color: @nord2;
 @ui-view-quick-docs-link-color: @nord8;
 @ui-view-quick-view-background-color: @nord2;
