@@ -1,28 +1,29 @@
 /*
- * Copyright (c) 2017-present Arctic Ice Studio <development@arcticicestudio.com>
- * Copyright (c) 2017-present Sven Greb <code@svengreb.de>
- *
- * Support for extension "brackets-show-whitespace".
- * Project:    Nord Brackets
- * Repository: https://github.com/arcticicestudio/nord-brackets
- * License:    MIT
+ * Copyright (c) 2016-present Sven Greb <development@svengreb.de>
+ * This source code is licensed under the MIT license found in the license file.
+ */
+
+/*
+ * Support for the "brackets-show-whitespace" extension.
  * References:
- *   https://github.com/DennisKehrig/brackets-show-whitespace
+ *   1. https://github.com/DennisKehrig/brackets-show-whitespace
  */
 
 .CodeMirror {
-  .cm-dk-whitespace-space:before,
-  .cm-dk-whitespace-nonbrk-space:before,
-  .cm-dk-whitespace-leading-space:before,
-  .cm-dk-whitespace-leading-nonbrk-space:before,
-  .cm-dk-whitespace-trailing-space:before,
-  .cm-dk-whitespace-trailing-nonbrk-space:before,
-  .cm-dk-whitespace-empty-line-space:before,
-  .cm-dk-whitespace-empty-line-nonbrk-space:before,
-  .cm-dk-whitespace-tab:before,
-  .cm-dk-whitespace-leading-tab:before,
-  .cm-dk-whitespace-trailing-tab:before,
-  .cm-dk-whitespace-empty-line-tab:before {
-    background-color: @editor-invisible-character-color;
+  .cm-dk-whitespace-space,
+  .cm-dk-whitespace-nonbrk-space,
+  .cm-dk-whitespace-leading-space,
+  .cm-dk-whitespace-leading-nonbrk-space,
+  .cm-dk-whitespace-trailing-space,
+  .cm-dk-whitespace-trailing-nonbrk-space,
+  .cm-dk-whitespace-empty-line-space,
+  .cm-dk-whitespace-empty-line-nonbrk-space,
+  .cm-dk-whitespace-tab,
+  .cm-dk-whitespace-leading-tab,
+  .cm-dk-whitespace-trailing-tab,
+  .cm-dk-whitespace-empty-line-tab {
+    ::before {
+      background-color: @editor-invisible-character-color;
+    }
   }
 }

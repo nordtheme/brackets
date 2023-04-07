@@ -1,19 +1,23 @@
 {
   "name": "nord-brackets",
-  "title": "Nord",
-  "description": "An arctic, north-bluish clean and elegant Brackets theme.",
+  "description": "An arctic, north-bluish clean and elegant Brackets theme",
   "version": "0.1.0",
-  "homepage": "https://github.com/arcticicestudio/nord-brackets",
-  "author": "Arctic Ice Studio <development@arcticicestudio.com> (http://arcticicestudio.com)",
-  "license": "(MIT AND CC-BY-SA-4.0)",
+  "homepage": "https://www.nordtheme.com/ports/brackets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nordtheme/brackets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nordtheme/brackets/issues"
+  },
+  "license": "MIT",
   "engines": {
     "brackets": ">=0.24.0"
   },
-  "theme": {
-    "file": "nord-brackets.less",
-    "dark": true,
-    "addModeClass": true
-  },
+  "files": [
+    "styles",
+    "nord.less"
+  ],
   "keywords": [
     "arctic",
     "north",
@@ -21,10 +25,45 @@
     "clean",
     "elegant"
   ],
+  "theme": {
+    "file": "nord.less",
+    "dark": true,
+    "addModeClass": true
+  },
+  "scripts": {
+    "format": "run-s format:*",
+    "format:js": "eslint --fix .",
+    "format:pretty": "prettier --ignore-unknown --no-editorconfig --write \"**\"",
+    "lint": "run-s lint:css lint:js lint:md lint:pretty",
+    "lint:ci": "run-s --continue-on-error lint:css lint:js lint:md lint:ci:pretty",
+    "lint:ci:pretty": "prettier --check --ignore-unknown --loglevel silent --no-editorconfig --no-error-on-unmatched-pattern \"**\"",
+    "lint:css": "stylelint --formatter verbose *.less styles/",
+    "lint:js": "eslint .",
+    "lint:md": "remark --no-stdout . .github/",
+    "lint:pretty": "prettier --check --ignore-unknown --no-editorconfig \"**\"",
+    "prepare:husky": "husky install",
+    "prepare": "run-s prepare:*"
+  },
+  "dependencies": {
+    "nord": "0.2.1"
+  },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-help": "^1.6.1",
-    "gulp-stylelint": "^3.9.0",
-    "stylelint-config-standard": "^16.0.0"
+    "@arcticicestudio/eslint-config-base": ">=0.11.0 <=1.0.0",
+    "@arcticicestudio/remark-preset-lint": ">=0.4.0 <1.0.0",
+    "@prettier/plugin-xml": "2.2.0",
+    "eslint": "8.38.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-prettier": "4.2.1",
+    "husky": "8.0.3",
+    "lint-staged": "13.2.1",
+    "npm-run-all": "4.1.5",
+    "postcss-less": "6.0.0",
+    "prettier": "2.8.7",
+    "prettier-plugin-sh": "0.12.8",
+    "remark-cli": "11.0.0",
+    "stylelint-config-standard": "32.0.0",
+    "stylelint-less": "1.0.6",
+    "stylelint-prettier": "3.0.0"
   }
 }

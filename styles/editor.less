@@ -1,10 +1,6 @@
 /*
- * Copyright (c) 2017-present Arctic Ice Studio <development@arcticicestudio.com>
- * Copyright (c) 2017-present Sven Greb <code@svengreb.de>
- *
- * Project:    Nord Brackets
- * Repository: https://github.com/arcticicestudio/nord-brackets
- * License:    MIT
+ * Copyright (c) 2016-present Sven Greb <development@svengreb.de>
+ * This source code is licensed under the MIT license found in the license file.
  */
 
 .CodeMirror,
@@ -13,10 +9,11 @@
   color: @editor-text-color;
 }
 
-/*+------------+
-  + Components +
-  +------------+*/
-/*+--- Cursor ---+*/
+/* +------------+
+   + Components +
+   +------------+ */
+
+/* +--- Cursor ---+ */
 .CodeMirror-cursor {
   border-left: 2px solid @editor-cursor-color;
 }
@@ -26,10 +23,11 @@
   border-bottom: 2px solid @editor-cursor-color;
 }
 
-/*+------------+
-  + UX Support +
-  +------------+*/
-/*+--- Active Line ---+*/
+/* +------------+
+   + UX Support +
+   +------------+ */
+
+/* +--- Active Line ---+ */
 .CodeMirror-focused .CodeMirror-activeline-background {
   background-color: @editor-active-line;
 }
@@ -49,7 +47,7 @@
   }
 }
 
-/*+--- Selected Line ---+*/
+/* +--- Selected Line ---+ */
 .CodeMirror .CodeMirror-selected {
   background-color: @editor-selection-unfocused-color;
 }
@@ -58,7 +56,7 @@
   background-color: @editor-selection-color;
 }
 
-/*+--- Brackets ---+*/
+/* +--- Brackets ---+ */
 .CodeMirror-matchingbracket,
 .CodeMirror-matchingtag {
   background-color: transparent !important;
@@ -66,7 +64,7 @@
   color: inherit !important;
 }
 
-/*+--- Search Highlights ---+*/
+/* +--- Search Highlights ---+ */
 .CodeMirror-searching {
   background-color: @editor-search-match-background-color;
   color: inherit !important;
